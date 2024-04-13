@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS for specific styling unique to this site -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"/>
+    <!-- Title of Website -->
+    <title>Moderna Furniture Shop</title>
+</head>
+
+<body>
+    <!-- Header section with navigation bar -->
+    <header class="sticky-top bg-white shadow-lg">
+        <nav class="navbar navbar-expand-lg justify-content-space-between container">
+            <a class="navbar-brand" href="/" aria-label="Moderna">
+                <img src="assets/images/Moderna_Logo.svg" alt="Moderna Logo" class="navbar-logo">
+            </a>
+            <!-- Mobile navigation toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Navigation links for different sections of the site -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <div class="d-flex justify-content-center flex-grow-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Search and other utility icons -->
+                <form class="nav-icons d-flex justify-content-center ms-auto" role="search">
+                    <input class="form-control me-2 placeholder" type="search" placeholder="Search" aria-label="Search" id="headerSearch">
+                    <button class="btn" type="button" id="searchToggle"><i class="bi bi-search"></i></button>
+                    <a class="btn" href="#cart"><i class="bi bi-cart2"></i></a>
+                    <a class="btn" href="#profile"><i class="bi bi-person-circle"></i></a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- Main content area -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="animate__animated animate__zoomIn">Artistic <br class="desktop-break"> Elegance in <br class="desktop-break"> Every Piece </h1>
+            <a href="#shop" class="btn cta-btn">Explore our Collection</a>
+        </section>
+        <!-- Our New Collections Section -->
+        <section class="new-collections">
+            <h3 class="animate__animated animate__slideInRight">Our New Collections</h3>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="nc-img">
+                                <img src="assets/images/Vanyaga Coffee Table.png" class="img-fluid" alt="Art deco theme coffee table">
+                            </div>
+                            <div class="nc-caption">
+                                <caption>Vanyaga Coffee Table</caption>
+                                <span class="">$280</span>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="nc-img">
+                                <img src="assets/images/Malaya Living Room Set.png" class="img-fluid" alt="Contemporary living room set">
+                            </div>
+                            <div class="nc-caption">
+                                <caption>Malaya Living Room Set</caption>
+                                <span>$2850</span>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="nc-img">
+                                <img src="assets/images/Mindoro Coffee Table.png" class="img-fluid" alt="Wood carved ornament coffee table">
+                            </div>
+                            <div class="nc-caption">
+                                <caption>Mindoro Coffee Table</caption>
+                                <span>$215</span>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="nc-img">
+                                <img src="assets/images/Neuva Sofa Set.png" class="img-fluid" alt="L shape sofa set modern">
+                            </div>
+                            <div class="nc-caption">
+                                <caption>Nueva Sofa Set</caption>
+                                <span>$1960</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Image Divider -->
+        <img src="assets/images/divider.svg" alt="Image Divider" id="image-divider">
+        <!-- Trending Section -->
+        <section class="trending">
+            <h3 class="animate__animated animate__slideInRight">Trending</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="assets/images/img-1.png" alt="Item 1"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">RIKOR COFFEE TABLE</h4>
+                        <span class="overlay-caption">Crafted from solid wood and smooth glass.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img src="assets/images/img-2.png" alt="Item 2"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">ESME FABRIC CHAIR</h4>
+                        <span class="overlay-caption">Art deco inspired chair that will surely elevate the living room.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img src="assets/images/img-3.png" alt="Item 3"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">KALAN DINING TABLE SET</h4>
+                        <span class="overlay-caption">Contemporary and sleek dining table set.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/img-4.png" alt="Item 4"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">MI SALLY COFFEE TABLE</h4>
+                        <span class="overlay-caption">Sleek textured ceramic and gold frame coffee table.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/images/img-5.png" alt="Item 5"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">ESME 2 SOFA SET</h4>
+                        <span class="overlay-caption">Art deco inspired sofa set that perfectly define elegance.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img src="assets/images/img-6.png" alt="Item 6"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">VICTORIA BED FRAME</h4>
+                        <span class="overlay-caption">A bedframe fit for royalty.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img src="assets/images/img-7.png" alt="Item 7"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">CHATSKI MODERN CENTRE TABLE</h4>
+                        <span class="overlay-caption">Modern table made of polished reclaimed wood.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+                <div class="grid-item grid-item--width2">
+                    <img src="assets/images/img-8.png" alt="Item 8"/>
+                    <div class="overlay animate__animated animate__lightSpeedInRight">
+                        <h4 class="text">MORENA VASES</h4>
+                        <span class="overlay-caption">A collection of neutral colored clay and ceramic vases.</span>                        
+                        <p class="learn-more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+    <!-- Footer section -->        
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row text-center text-md-left">
+                <!-- Company Name and Logo -->
+                <div class="col-12 col-md-3 col-lg-3">
+                    <img src="assets/images/Moderna_Logo.svg" alt="Moderna Logo" class="footer-logo">
+                    <div class="social-icons">
+                        <!-- Update href with your social media links -->
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>    
+                <!-- Contact Us -->
+                <div class="contact-us col-12 col-md-3 col-lg-3">
+                    <h5>Contact Us</h5>
+                    <p>get_info@moderna.com</p>
+                    <p>+1 657 000 016</p>
+                    <p>41C Roxette Street, Toronto City</p>
+                </div>    
+                <!-- Newsletter -->
+                <div class="col-12 col-md-3 newsletter-section">
+                    <h5>Newsletter</h5>
+                    <form id="newsletter-form" class="form-inline">
+                        <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Your Email" required>
+                        <button type="submit" class="btn mb-2 subscribe-btn">SUBSCRIBE</button>
+                    </form>
+                </div>    
+                <!-- Copyright Info  -->
+                <div class="col-12 mt-4">
+                    <p>&copy; 2024 Moderna Furniture Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"><i class="bi bi-arrow-up"></i></button>
+    <!-- JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> 
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
